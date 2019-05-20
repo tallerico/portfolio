@@ -1,0 +1,39 @@
+nav {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.5em;
+	color: white;
+	background-color: #030304;
+}
+
+.nav_col {
+	padding: 0.8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	background-color: #0506f6;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='28.3' stroke-opacity='0.21' %3E%3Ccircle fill='%230506f6' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%230506f2' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%230506ee' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%230506ea' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%230506e5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230506e1' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%230506dd' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230506d9' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%230506d5' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%230506d1' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%230506cd' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%230505c9' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%230505c5' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%230505c1' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%230505bd' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%230505b9' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%230505b5' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%230505b1' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+header {
+	font: bold calc(0.09 * (100vw)) 'Rajdhani', sans-serif;
+	color: white;
+}
+
+main {
+	background-color: white;
+}
+
+.svg_curve {
+	position: absolute;
+	bottom: 0;
+}

@@ -1,0 +1,12 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@primaryColor   : @grey;
+@secondaryColor : @blue;
+@grey           : #342c5b;
+@blue           : #0506F6;
+
+@headerFont        : 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Oswald', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontFamily  : 'Open+Sans:400italic,400|Oswald:400,700';
