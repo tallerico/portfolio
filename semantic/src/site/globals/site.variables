@@ -2,11 +2,18 @@
      User Global Variables
 *******************************/
 
+@importGoogleFonts : true;
+
+
+
 @primaryColor   : @grey;
 @secondaryColor : @blue;
 @grey           : #342c5b;
 @blue           : #0506F6;
 
-@headerFont        : 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@pageFont          : 'Oswald', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@googleFontFamily  : 'Open+Sans:400italic,400|Oswald:400,700';
+@fontName          : 'Rajdhani';
+@fontSmoothing     : antialiased;
+@googleFontFamily  : 'Rajdhani';
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Roboto', 'Helvetica Neue', Arial, Helvetica, sans-serif;
