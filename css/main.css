@@ -35,7 +35,7 @@ main {
 }
 
 .cont_pad {
-	padding: 2em 2em 10em 2em;
+	padding: 2em;
 }
 
 article {
@@ -46,6 +46,11 @@ article {
 .svg_curve {
 	position: absolute;
 	bottom: 0;
+}
+
+.svg_cont {
+	height: 150px;
+	position: relative;
 }
 
 .mycard {
@@ -71,4 +76,18 @@ article {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.cont_pad {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.form_container {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
