@@ -4,7 +4,6 @@ import Particles from 'react-particles-js';
 function particles() {
 	return (
 		<Particles
-			className="particles"
 			params={{
 				particles: {
 					number: {
@@ -114,6 +113,10 @@ function particles() {
 					},
 				},
 				retina_detect: true,
+			}}
+			style={{
+				width: '100%',
+				height: '100%',
 			}}
 		/>
 	);
