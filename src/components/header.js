@@ -28,11 +28,17 @@ const Paragraph = styled.p`
 	color: white;
 `;
 
+const BlueDiv = styled.div`
+	height: 1px;
+	background-color: #080ae3;
+`;
+
 function header() {
 	return (
 		<Container>
 			<TextContainer>
 				<HeaderOne>Hi! I am Mike.</HeaderOne>
+				<BlueDiv />
 				<Paragraph>Thank you so much for checking out my portfolio.</Paragraph>
 			</TextContainer>
 			<Particles />
