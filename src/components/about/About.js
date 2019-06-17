@@ -5,7 +5,7 @@ import InfoContainer from './InfoContainer';
 function About() {
 	return (
 		<Container>
-			<InfoContainer>Test</InfoContainer>
+			<InfoContainer>TestMe</InfoContainer>
 		</Container>
 	);
 }
