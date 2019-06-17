@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import { Transition } from 'react-transition-group';
 import Menu from './Menu';
 import Circle from './Circle';
@@ -15,7 +15,7 @@ function Navigation() {
 	}
 
 	return (
-		<div>
+		<Fragment>
 			<Menu clicked={clicked} />
 			<Transition in={clicked} timeout={500}>
 				{state => (
@@ -23,7 +23,7 @@ function Navigation() {
 					<Circle onClick={handleClick} state={state} />
 				)}
 			</Transition>
-		</div>
+		</Fragment>
 	);
 }
 
