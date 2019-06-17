@@ -2,23 +2,20 @@ import React, { Fragment } from 'react';
 import Header from './components/header';
 import Navigation from './components/navigation/navigation';
 import About from './components/about/About';
-import { createGlobalStyle } from 'styled-components';
-import './App.css';
+import styled from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    overflow: hidden;
-	}
+const ContainerMax = styled.div`
+	position: relative;
+	overflow: hidden;
 `;
 
 function App() {
 	return (
-		<Fragment>
-			<GlobalStyles />
+		<ContainerMax>
 			<Navigation />
 			<Header />
 			<About />
-		</Fragment>
+		</ContainerMax>
 	);
 }
 
