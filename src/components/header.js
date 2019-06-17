@@ -4,9 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	position: relative;
-	width: 100vw;
-	height: 100vh;
-	background: #343434;
+	overflow: hidden;
 `;
 
 const TextContainer = styled.div`
@@ -36,11 +34,6 @@ const BlueDiv = styled.div`
 function header() {
 	return (
 		<Container>
-			<TextContainer>
-				<HeaderOne>Hi! I am Mike.</HeaderOne>
-				<BlueDiv />
-				<Paragraph>Thank you so much for checking out my portfolio.</Paragraph>
-			</TextContainer>
 			<Particles />
 		</Container>
 	);
