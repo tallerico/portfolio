@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Header from './components/header';
 import Navigation from './components/navigation/navigation';
+import About from './components/about/About';
 import { createGlobalStyle } from 'styled-components';
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
 			<GlobalStyles />
 			<Navigation />
 			<Header />
+			<About />
 		</Fragment>
 	);
 }
