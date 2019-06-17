@@ -4,17 +4,18 @@ import Particles from 'react-particles-js';
 function particles() {
 	return (
 		<Particles
+			canvasClassName="canvas"
 			params={{
 				particles: {
 					number: {
-						value: 96,
+						value: 160,
 						density: {
 							enable: true,
 							value_area: 800,
 						},
 					},
 					color: {
-						value: '#fff',
+						value: '#ffffff',
 					},
 					shape: {
 						type: 'circle',
@@ -25,59 +26,64 @@ function particles() {
 						polygon: {
 							nb_sides: 5,
 						},
+						image: {
+							src: 'img/github.svg',
+							width: 100,
+							height: 100,
+						},
 					},
 					opacity: {
 						value: 1,
-						random: false,
+						random: true,
 						anim: {
-							enable: false,
-							speed: 0.324593649325251,
-							opacity_min: 0.1,
+							enable: true,
+							speed: 1,
+							opacity_min: 0,
 							sync: false,
 						},
 					},
 					size: {
-						value: 0,
-						random: false,
+						value: 3,
+						random: true,
 						anim: {
 							enable: false,
-							speed: 40,
-							size_min: 0.1,
+							speed: 4,
+							size_min: 0.3,
 							sync: false,
 						},
 					},
 					line_linked: {
 						enable: true,
-						distance: 128.19177489524316,
-						color: '#a0a2ac',
-						opacity: 0.4646951839952565,
-						width: 0.6409588744762158,
+						distance: 64.09588744762158,
+						color: '#ffffff',
+						opacity: 0.17626369048095938,
+						width: 0.8011985930952699,
 					},
 					move: {
 						enable: true,
-						speed: 6,
+						speed: 3.204794372381079,
 						direction: 'none',
-						random: false,
+						random: true,
 						straight: false,
-						out_mode: 'out',
+						out_mode: 'bounce',
 						bounce: false,
 						attract: {
 							enable: false,
 							rotateX: 600,
-							rotateY: 1200,
+							rotateY: 600,
 						},
 					},
 				},
 				interactivity: {
-					detect_on: 'canvas',
+					detect_on: 'window',
 					events: {
 						onhover: {
 							enable: true,
 							mode: 'bubble',
 						},
 						onclick: {
-							enable: true,
-							mode: 'repulse',
+							enable: false,
+							mode: 'bubble',
 						},
 						resize: true,
 					},
@@ -85,18 +91,18 @@ function particles() {
 						grab: {
 							distance: 400,
 							line_linked: {
-								opacity: 0.5,
+								opacity: 1,
 							},
 						},
 						bubble: {
-							distance: 400,
-							size: 4,
-							duration: 0.3,
-							opacity: 1,
+							distance: 250,
+							size: 0,
+							duration: 2,
+							opacity: 0,
 							speed: 3,
 						},
 						repulse: {
-							distance: 200,
+							distance: 400,
 							duration: 0.4,
 						},
 						push: {
@@ -109,10 +115,8 @@ function particles() {
 				},
 				retina_detect: true,
 			}}
-			style={{
-				width: '100vw',
-				height: '100vh',
-			}}
+			width="100vw"
+			height="75vh"
 		/>
 	);
 }
