@@ -13,6 +13,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+img {
+	max-height: 100%;
+}
+
 @media screen and (max-width: 600px) {
 	.canvas {
 		background-size: 80%;
