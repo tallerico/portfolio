@@ -9,7 +9,7 @@ function Menu(props) {
 			{state => (
 				<List state={state}>
 					<ListIteam state={state} delay={500}>
-						About
+						<a href="#about">About</a>
 					</ListIteam>
 
 					<ListIteam state={state} delay={800}>
