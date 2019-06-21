@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 const InfoContainer = styled.div`
 	padding: 1em;
-	background-color: #080ae3;
+	background-color: #f5f2f2;
 	border-radius: 10px;
-	max-width: 600px;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 `;
