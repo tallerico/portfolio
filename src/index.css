@@ -22,3 +22,7 @@ img {
 		background-size: 80%;
 	}
 }
+
+svg {
+	max-height: 100%;
+}
