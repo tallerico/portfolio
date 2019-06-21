@@ -5,7 +5,9 @@ import H3 from '../base/H3';
 import SkillsItem from './SkillsItem';
 
 const Container = styled.div`
-	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
 	background-color: #f5f2f2;
 	border-radius: 10px;
 	padding: 1em;
