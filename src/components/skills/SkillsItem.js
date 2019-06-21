@@ -6,10 +6,10 @@ import H3 from '../base/H3';
 const Container = styled.div`
 	padding: 1em;
 	height: 60px;
-	width: 200px;
+	width: 175px;
 	display: flex;
 	flex-direction: row;
-	text-align: center;
+
 	justify-content: flex-start;
 	align-content: center;
 `;
@@ -23,6 +23,7 @@ const VertLine = styled.div`
 	height: 100%;
 	background-color: #05050d;
 	opacity: 0.2;
+	margin-right: 8px;
 `;
 
 const Title = styled(H3)`
@@ -36,7 +37,7 @@ function SkillItem(props) {
 			<SkillsPercent percent={props.percent} />
 			<VertLine />
 			<TextContainer>
-				<i class={`devicon-${props.technology.toLowerCase()}-plain colored`} />
+				<i className={`devicon-${props.technology.toLowerCase()}-plain colored`} />
 				<Title>{props.technology}</Title>
 			</TextContainer>
 		</Container>
