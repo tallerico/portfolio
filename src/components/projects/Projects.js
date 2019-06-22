@@ -1,23 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
 import ProjectImage from './ProjectImage';
-import random from './random.jpg';
-import dash from './dash.jpg';
+import random from './img/random.jpg';
+import dash from './img/dashup.jpg';
+import gallery from './img/gallery.jpg';
+import fargalaxy from './img/fargalaxyblue.jpg';
+import tictactoe from './img/tictactoe.jpg';
+import directory from './img/directory.jpg';
 import H3 from '../base/H3';
+import Paragraph from '../base/Paragraph';
 
 const Container = styled.div`
 	display: flex;
+	flex: 1;
 	flex-wrap: wrap;
 	justify-content: center;
-	background: rgb(8, 101, 227);
-	background: linear-gradient(149deg, rgba(8, 101, 227, 1) 0%, rgba(8, 10, 227, 1) 100%);
+	background-color: #f5f2f2;
 	padding: 3em 1em 3em 1em;
 `;
 
 const ProjectItem = styled.div`
+	position: relative;
 	margin: 10px;
 	width: 300px;
-	background-color: #f5f2f2;
+	background-color: white;
 	border-radius: 10px;
 `;
 
@@ -26,10 +32,15 @@ const Title = styled(H3)`
 `;
 
 const InfoContainer = styled.div`
+	position: relative;
 	padding: 1em;
 `;
 
-const Nav = styled.div``;
+const Nav = styled.div`
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
+`;
 
 const Link = styled.a`
 	text-decoration: none;
@@ -44,32 +55,88 @@ const DarkLine = styled.div`
 	margin-bottom: 5px;
 `;
 
+const Info = styled(Paragraph)`
+	margin-bottom: 25px;
+`;
+
 function Projects() {
 	return (
 		<Container>
 			<ProjectItem>
 				<ProjectImage url={dash} />
 				<InfoContainer>
-					<Title color="#05050D">React App</Title>
+					<Title color="#05050D">React Dashboard App</Title>
 					<DarkLine />
-					<Nav>
-						<Link href="https://dashup.herokuapp.com/home/">Live</Link>
-						<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-12/tree/development">
-							Code
-						</Link>
-					</Nav>
+					<Info>
+						Personal Dashboard App built using the MERN stack. MongoDB, Express, React, Node.
+					</Info>
 				</InfoContainer>
+				<Nav>
+					<Link href="https://dashup.herokuapp.com/home/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-12/tree/development">
+						Code
+					</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={gallery} />
+				<InfoContainer>
+					<Title color="#05050D">React Gallery App</Title>
+					<DarkLine />
+					<Info>React picture gallery using the Flikr API.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://react-gallery-jmt.netlify.com">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-9">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={fargalaxy} />
+				<InfoContainer>
+					<Title color="#05050D">React SpaceX App</Title>
+					<DarkLine />
+					<Info>React app that aggregates SpaceX launch data. Currently a work in progress.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://fargalaxy.io">Live</Link>
+					<Link href="https://github.com/tallerico/spacex">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={tictactoe} />
+				<InfoContainer>
+					<Title color="#05050D">Tic Tac Toe Game</Title>
+					<DarkLine />
+					<Info>Simple tic tac toe game built using vanilla JavaScript.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-4/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-4">Code</Link>
+				</Nav>
 			</ProjectItem>
 			<ProjectItem>
 				<ProjectImage url={random} />
 				<InfoContainer>
 					<Title color="#05050D">Random Quote Generator</Title>
 					<DarkLine />
-					<Nav>
-						<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-1/">Live</Link>
-						<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-1">Code</Link>
-					</Nav>
+					<Info>Simple random quote generator using vanilla JavaScript.</Info>
 				</InfoContainer>
+				<Nav>
+					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-1/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-1">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={directory} />
+				<InfoContainer>
+					<Title color="#05050D">Employee Directory</Title>
+					<DarkLine />
+					<Info>Practice pulling data from an API and manipulating the data into a simple UI.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-5/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-5">Code</Link>
+				</Nav>
 			</ProjectItem>
 		</Container>
 	);
