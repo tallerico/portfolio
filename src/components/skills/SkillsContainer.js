@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import H2 from '../base/H2';
-import H3 from '../base/H3';
 import SkillsItem from './SkillsItem';
 
 const Container = styled.div`
