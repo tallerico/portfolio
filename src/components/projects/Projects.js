@@ -7,6 +7,12 @@ import gallery from './img/gallery.jpg';
 import fargalaxy from './img/fargalaxyblue.jpg';
 import tictactoe from './img/tictactoe.jpg';
 import directory from './img/directory.jpg';
+import form from './img/form.jpg';
+import pagination from './img/pagination.jpg';
+import library from './img/library.jpg';
+import pug from './img/pug.jpg';
+import twitter from './img/twitter.jpg';
+import H2 from '../base/H2';
 import H3 from '../base/H3';
 import Paragraph from '../base/Paragraph';
 
@@ -136,6 +142,68 @@ function Projects() {
 				<Nav>
 					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-5/">Live</Link>
 					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-5">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={form} />
+				<InfoContainer>
+					<Title color="#05050D">Form Validation Sample</Title>
+					<DarkLine />
+					<Info>Practice validating data from a form using vanilla JavaScript.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-3/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-3">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={pagination} />
+				<InfoContainer>
+					<Title color="#05050D">Pagination Sample</Title>
+					<DarkLine />
+					<Info>
+						Practice building pagination from a list of students using vanilla JavaScript.
+					</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://tallerico.github.io/Treehouse-FSJS-Project-2/">Live</Link>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-2">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={pug} />
+				<InfoContainer>
+					<Title color="#05050D">Library Manager</Title>
+					<DarkLine />
+					<Info>Library book manager built using Pug, Node and SQLite DB.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-10">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={library} />
+				<InfoContainer>
+					<Title color="#05050D">Custom API for Review Platform</Title>
+					<DarkLine />
+					<Info>Custom API built for a course review platform suing MongoDB and Mongoose.</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-11">Code</Link>
+				</Nav>
+			</ProjectItem>
+			<ProjectItem>
+				<ProjectImage url={twitter} />
+				<InfoContainer>
+					<Title color="#05050D">Twitter App</Title>
+					<DarkLine />
+					<Info>
+						This project uses twitters API to pull in your latest favorited, tweeted and DM's
+						messages. It will also allow you to tweet from the dashboard.
+					</Info>
+				</InfoContainer>
+				<Nav>
+					<Link href="https://github.com/tallerico/Treehouse-FSJS-Project-7">Code</Link>
 				</Nav>
 			</ProjectItem>
 		</Container>
