@@ -1,25 +1,37 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Personal Portfolio",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "lodash": "^4.17.11",
-    "minimatch": "^3.0.4",
-    "semantic-ui": "^2.4.2"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-particles-js": "^2.6.0",
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.12",
+    "react-transition-group": "^4.1.1",
+    "react-waypoint": "^9.0.2",
+    "styled-components": "^5.0.0-beta.0",
+    "victory": "^32.2.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tallerico/portfolio.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Mike Tallerico",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tallerico/portfolio/issues"
-  },
-  "homepage": "https://github.com/tallerico/portfolio#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

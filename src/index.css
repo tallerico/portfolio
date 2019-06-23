@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.canvas {
+	background-color: #343434;
+	background-image: url('./Intro-01.svg');
+	background-size: 40%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+img {
+	max-height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.canvas {
+		background-size: 80%;
+	}
+}
+
+svg {
+	max-height: 100%;
+}
