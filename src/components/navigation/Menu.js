@@ -2,13 +2,7 @@ import React from 'react';
 import List from './List';
 import ListItem from './ListItem';
 import { Transition } from 'react-transition-group';
-import styled from 'styled-components';
-import { Link, animateScroll as scroll } from 'react-scroll';
-
-// const Link = styled.a`
-// 	text-decoration: none;
-// 	color: white;
-// `;
+import { Link } from 'react-scroll';
 
 function Menu(props) {
 	return (
