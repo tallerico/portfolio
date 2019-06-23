@@ -55,12 +55,13 @@ function contact() {
 			<FormContainer>
 				<H2 color="white">Contact Me</H2>
 				<Form name="contact" method="POST" data-netlify="true">
+					<input type="hidden" name="form-name" value="contact" />
 					<Label htmlFor="name">Name</Label>
-					<Input id="name" />
+					<Input id="name" type="text" name="name" />
 					<Label htmlFor="email">Email</Label>
-					<Input id="email" />
+					<Input id="email" type="text" name="email" />
 					<Label htmlFor="help">How Can I Help?</Label>
-					<Textarea id="help" />
+					<Textarea id="help" type="text" name="content" />
 					<SubmitButton type="submit">Submit</SubmitButton>
 				</Form>
 			</FormContainer>
