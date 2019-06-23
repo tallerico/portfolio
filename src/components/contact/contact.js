@@ -61,7 +61,7 @@ function contact() {
 					<Label htmlFor="email">Email</Label>
 					<Input id="email" type="text" name="email" />
 					<Label htmlFor="help">How Can I Help?</Label>
-					<Textarea id="help" type="text" name="content" />
+					<Textarea id="help" type="text" name="message" />
 					<SubmitButton type="submit">Submit</SubmitButton>
 				</Form>
 			</FormContainer>
