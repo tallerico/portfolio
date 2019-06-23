@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as V from 'victory';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
