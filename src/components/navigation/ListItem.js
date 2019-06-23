@@ -19,6 +19,7 @@ import styled from 'styled-components';
 
 const ListItem = styled.li.attrs(props => ({}))`
 	color: white;
+	cursor: pointer;
 	transition: transform 1000ms ease-in-out;
 	transition-delay: ${props => props.delay}ms;
 `;

@@ -16,7 +16,7 @@ function Navigation() {
 
 	return (
 		<Fragment>
-			<Menu clicked={clicked} />
+			<Menu clicked={clicked} action={handleClick} />
 			<Transition in={clicked} timeout={500}>
 				{state => (
 					// state change: exited -> entering -> entered -> exiting -> exited
