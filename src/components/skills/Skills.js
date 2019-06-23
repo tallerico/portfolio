@@ -9,7 +9,7 @@ const Container = styled.div`
 
 function SKills() {
 	return (
-		<Container>
+		<Container id="skills">
 			<SkillsContainer />
 		</Container>
 	);

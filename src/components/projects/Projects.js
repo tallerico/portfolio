@@ -20,7 +20,7 @@ const Container = styled.div`
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	background-color: #f5f2f2;
 	padding: 3em 1em 3em 1em;
 `;
@@ -67,7 +67,7 @@ const Info = styled(Paragraph)`
 
 function Projects() {
 	return (
-		<Container>
+		<Container id="projects">
 			<ProjectItem>
 				<ProjectImage url={dash} />
 				<InfoContainer>

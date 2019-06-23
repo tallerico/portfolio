@@ -2,6 +2,12 @@ import React from 'react';
 import List from './List';
 import ListIteam from './ListItem';
 import { Transition } from 'react-transition-group';
+import styled from 'styled-components';
+
+const Link = styled.a`
+	text-decoration: none;
+	color: white;
+`;
 
 function Menu(props) {
 	return (
@@ -9,19 +15,19 @@ function Menu(props) {
 			{state => (
 				<List state={state}>
 					<ListIteam state={state} delay={500}>
-						<a href="#about">About</a>
+						<Link href="#about">About</Link>
 					</ListIteam>
 
 					<ListIteam state={state} delay={800}>
-						Skills
+						<Link href="#skills">Skills</Link>
 					</ListIteam>
 
 					<ListIteam state={state} delay={1000}>
-						Projects
+						<Link href="#projects">Projects</Link>
 					</ListIteam>
 
 					<ListIteam state={state} delay={1200}>
-						Contact
+						<Link href="#contact">Contact</Link>
 					</ListIteam>
 				</List>
 			)}
