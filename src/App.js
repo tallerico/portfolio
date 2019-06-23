@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/contact';
+import Footer from './components/footer/Footer';
 
 const ContainerMax = styled.div`
 	position: relative;
@@ -21,6 +22,7 @@ function App() {
 			<Skills />
 			<Projects />
 			<Contact />
+			<Footer />
 		</ContainerMax>
 	);
 }
