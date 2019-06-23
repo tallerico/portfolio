@@ -24,14 +24,7 @@ const Image = styled.img`
 `;
 
 function LogoButtonWhite(props) {
-	return (
-		<a href="https://github.com/tallerico">
-			<Button>
-				<Image src={props.image} alt="GitHub Logo" />
-				GitHub
-			</Button>
-		</a>
-	);
+	return <Button>{props.label}</Button>;
 }
 
 export default LogoButtonWhite;
