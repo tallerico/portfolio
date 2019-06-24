@@ -12,10 +12,10 @@ const FormContainer = styled.div`
 	flex-direction: column;
 	margin-left: auto;
 	margin-right: auto;
-	width: 250px;
+	width: 300px;
 `;
 const Form = styled.form`
-	width: 250px;
+	width: 300px;
 `;
 
 const Label = styled.label`
@@ -30,14 +30,14 @@ const Input = styled.input`
 	border: none;
 	margin-bottom: 0.5em;
 	height: 30px;
-	width: 200px;
+	width: 300px;
 `;
 
 const Textarea = styled.textarea`
 	border-radius: 10px;
 	border: none;
 	height: 100px;
-	width: 200px;
+	width: 300px;
 	margin-bottom: 0.5em;
 `;
 
