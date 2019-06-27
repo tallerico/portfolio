@@ -22,7 +22,7 @@ function LinkBlock() {
 			<a href="https://www.linkedin.com/in/mike-tallerico-03580339/">
 				<Icon src={linkedin} alt="linked icon" />
 			</a>
-			<a href="https://www.linkedin.com/in/mike-tallerico-03580339/">
+			<a href="https://dev.to/mtallerico1">
 				<Icon src={dev} alt="dev.to icon" />
 			</a>
 		</Container>
