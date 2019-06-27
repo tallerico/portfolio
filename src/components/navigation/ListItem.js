@@ -20,6 +20,7 @@ import styled from 'styled-components';
 const ListItem = styled.li.attrs(props => ({}))`
 	color: white;
 	cursor: pointer;
+	transform: translateX(${({ state }) => (state === 'entering' || state === 'entered' ? 0 : 50)}px);
 	transition: transform 1000ms ease-in-out;
 	transition-delay: ${props => props.delay}ms;
 `;
