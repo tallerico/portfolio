@@ -9,7 +9,7 @@ function Menu(props) {
 		<Transition in={props.clicked} timeout={500}>
 			{state => (
 				<List state={state}>
-					<ListItem state={state} delay={500}>
+					<ListItem state={state} delay={0}>
 						<Link
 							onClick={props.action}
 							activeClass="active"
@@ -17,13 +17,13 @@ function Menu(props) {
 							spy={true}
 							smooth={true}
 							offset={-70}
-							duration={500}
+							duration={1000}
 						>
 							About
 						</Link>
 					</ListItem>
 
-					<ListItem state={state} delay={800}>
+					<ListItem state={state} delay={200}>
 						<Link
 							onClick={props.action}
 							activeClass="active"
@@ -31,13 +31,13 @@ function Menu(props) {
 							spy={true}
 							smooth={true}
 							offset={-70}
-							duration={500}
+							duration={1000}
 						>
 							Skills
 						</Link>
 					</ListItem>
 
-					<ListItem state={state} delay={1000}>
+					<ListItem state={state} delay={400}>
 						<Link
 							onClick={props.action}
 							activeClass="active"
@@ -45,13 +45,13 @@ function Menu(props) {
 							spy={true}
 							smooth={true}
 							offset={-70}
-							duration={500}
+							duration={1000}
 						>
 							Projects
 						</Link>
 					</ListItem>
 
-					<ListItem state={state} delay={1200}>
+					<ListItem state={state} delay={600}>
 						<Link
 							onClick={props.action}
 							activeClass="active"
@@ -59,7 +59,7 @@ function Menu(props) {
 							spy={true}
 							smooth={true}
 							offset={-70}
-							duration={500}
+							duration={1000}
 						>
 							Contact
 						</Link>
