@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import github from './001-github-logo.svg';
 import linkedin from './002-linkedin.svg';
+import dev from './DEV_ICON-01.svg';
 
 const Container = styled.div`
 	display: flex;
@@ -20,6 +21,9 @@ function LinkBlock() {
 			</a>
 			<a href="https://www.linkedin.com/in/mike-tallerico-03580339/">
 				<Icon src={linkedin} alt="linked icon" />
+			</a>
+			<a href="https://www.linkedin.com/in/mike-tallerico-03580339/">
+				<Icon src={dev} alt="dev.to icon" />
 			</a>
 		</Container>
 	);
